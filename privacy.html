@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for The Mark Server personal Google Drive archive application.">
+  <title>Privacy Policy — The Mark Server</title>
+  <style>
+    :root { color-scheme: light; font: 17px/1.65 system-ui, -apple-system, "Segoe UI", sans-serif; background: #f7f8fb; color: #20283b; }
+    * { box-sizing: border-box; } body { margin: 0; }
+    .wrap { width: min(780px, calc(100% - 36px)); margin: auto; }
+    header { padding: 21px 0; background: #fff; border-bottom: 1px solid #e0e4ec; }
+    .brand { font-weight: 750; letter-spacing: -.02em; } nav { float: right; font-size: .92rem; }
+    a { color: #315b9a; } main { padding: 55px 0 75px; }
+    h1 { font-size: clamp(2.2rem, 5.6vw, 3rem); line-height: 1.2; letter-spacing: -.04em; }
+    h2 { font-size: 1.2rem; margin: 33px 0 10px; }
+    p { margin: 13px 0; } ul { padding-left: 23px; } li { margin: 8px 0; }
+    .date { font-size: .9rem; color: #64708a; }
+    footer { border-top: 1px solid #e0e4ec; padding: 22px 0 40px; font-size: .88rem; color: #5c6780; }
+    @media (max-width: 480px) { nav { display: block; float: none; margin-top: 4px; } }
+  </style>
+</head>
+<body>
+  <header><div class="wrap"><span class="brand">The Mark Server</span><nav><a href="index.html">Home</a></nav></div></header>
+  <main class="wrap">
+    <h1>Privacy Policy</h1>
+    <p class="date">Effective October 11, 2026</p>
+    <p>The Mark Server is a personal-use application operated by the owner of the Google account that authorizes it. Its purpose is to download and locally organize copies of the owner's Google Drive documents for the creative writing and worldbuilding project <em>The Mark</em>. This application is not offered as a public service.</p>
+    <h2>Information accessed</h2>
+    <p>With the owner's consent, rclone uses the Google Drive read-only permission (<code>https://www.googleapis.com/auth/drive.readonly</code>) to access file names, identifiers, folder structure, metadata, and file contents. This Google permission technically covers files throughout the authorized Drive, although the application's intended file-copying workflow is limited to a designated project folder.</p>
+    <h2>How information is used</h2>
+    <p>Accessed information is used solely to create an owner-controlled local document archive, preserve revisions, and support project indexing and analysis. The application does not request Google Drive write permissions and does not intentionally modify, delete, publish, or share source files in Google Drive.</p>
+    <h2>Storage and security</h2>
+    <p>Downloaded files and related metadata are stored on a Linux server under the owner's control. Google OAuth credentials and refresh tokens are retained in the server's local rclone configuration to maintain authorized access. The operator is responsible for protecting that configuration and the local files with appropriate system permissions and backups. No Google Drive credentials, project manuscripts, or backup databases are placed in this public GitHub Pages repository.</p>
+    <h2>Sharing, sale, and third parties</h2>
+    <p>Google Drive information accessed by the application is not sold, used for advertising, or provided to data brokers. The intended workflow transfers files from Google Drive to the owner's local server, not to third-party document-processing services. Google provides the authorized Drive API, and GitHub hosts only this public informational site; the website does not display or host the Drive content.</p>
+    <h2>Retention, deletion, and revocation</h2>
+    <p>The owner controls how long locally downloaded files and index records are kept. They remain until removed under the owner's chosen retention or deletion procedures. The owner may revoke the application's Google account access at <a href="https://myaccount.google.com/connections">Google Account connections</a>, remove OAuth tokens from the local rclone configuration, and delete local copies when no longer needed. Revoking access prevents future authorized downloads but does not automatically erase copies previously stored on the local server.</p>
+    <h2>Google API Services User Data</h2>
+    <p>The Mark Server's use and transfer of information received from Google APIs is limited to providing or improving this user-facing file archiving functionality. It does not use that information for advertising or other unrelated purposes.</p>
+    <h2>Public website information</h2>
+    <p>This GitHub Pages site is an informational website. It has no sign-in form, analytics script, or mechanism for uploading documents. GitHub may process ordinary website access data under its own privacy practices.</p>
+    <h2>Contact and updates</h2>
+    <p>Questions about the application or its privacy practices may be directed to the operator using the support email displayed on Google's OAuth consent screen. This policy may be updated to reflect changes in the application's actual data handling.</p>
+  </main>
+  <footer><div class="wrap">The Mark Server · <a href="index.html">Home</a> · <a href="privacy.html">Privacy policy</a></div></footer>
+</body>
+</html>
